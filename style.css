@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.login-button{
+    background-color: transparent;
+    color: #000;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #5487ff;
+    transition: 0.3s background-color;
+    margin-right: 5px;
+
+}
+
+
+.carousel-inner{
+    animation: float 5s ease-in-out infinite!important;
+}
+.carousel-inner img{
+    animation: fade-up 1s;
+}
+.anim{
+    animation: fade-up 3s;
+}
+nav{
+    animation: fade-down 2s 0.5s backwards ;
+}
+
+
+
+
+
+
+
+
+.login-button:hover{
+    background-color: #5487ff;
+    color: #fff;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar{
+    transition: all 0.4s;
+}
+.nav-scroll{
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+   
+    box-shadow: 0 8px 20px 0 rgba(174, 165, 165, 0.37);
+}
+.new-canva{
+    height: 100vh!important;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 5px;
+        background-color: #5487ff;
+        visibility: hidden;
+        border-radius: 4px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 55%;
+        visibility: visible;
+    }
+}
+
+.lgin{
+    visibility: hidden;
+    position: absolute;
+  }
+
+  @media (max-width: 575px){
+    .lgin{
+      visibility: visible;
+      position: relative;
+    }
+    .login-button{
+      visibility: hidden;
+      position: absolute;
+    }
+}
+
+.w-40{
+    height: 100vh;
+}
+
+
+@media (max-width: 979px){
+    .w-40{
+        width: 100%;
+    }
+}
+@media (max-width: 769px){
+    .box{
+        width: 50%!important;
+    }
+}
+
+
